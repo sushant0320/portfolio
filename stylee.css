@@ -1,0 +1,122 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    background-color: black;
+}
+
+.navlist {
+    background-color: black; /* Ensure the navlist has the same background */
+}
+
+.navlist li a {
+    color: rgb(255, 255, 255); /* Ensure the text color contrasts with the black background */
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Section Description */
+.section-description {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #b9b8b8;
+}
+
+/* Hire Me Form */
+.hire-me-form {
+    background-color: #f8d7d7;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Labels */
+.form-group label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Inputs and Textarea */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Input and Select Focus */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color:#e9204f;
+    outline: none;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color:#e9204f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    color:#e9204f;
+    background-color: #ffffff;
+}
+
+.hire-me-btn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hire-me-form {
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}

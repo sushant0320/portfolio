@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushant Portfolio</title>
+    
+    <!-- Custom CSS links -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylee.css">
+    
+    <!-- Boxicons link -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
+    <!-- Google Fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <a href="#" class="logo"><img src="img/logo(1).png" alt="Logo"></a>
+        <div class="bx bx-menu" id="menu-icon" aria-label="Menu"></div>
+        <ul class="navlist">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#service">Services</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Hire Me Section -->
+    <section class="hire-me-section" id="hire-me">
+        <div class="container">
+            <!-- Section Title -->
+            <h2 class="section-title">Hire Me</h2>
+            <p class="section-description">I'm available for freelance work. Let’s work together on your next project!</p>
+
+            <!-- Hire Me Form -->
+            <form class="hire-me-form" action="hire.php" method="post">
+                
+                <!-- Name Field -->
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required aria-required="true">
+                </div>
+                
+                <!-- Email Field -->
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required aria-required="true">
+                </div>
+                
+                <!-- Project Type Field -->
+                <div class="form-group">
+                    <label for="project-type">Project Type</label>
+                    <select id="project-type" name="project_type" required aria-required="true">
+                        <option value="">Select a project type</option>
+                        <option value="web-design">Web Design</option>
+                        <option value="web-development">Web Development</option>
+                        <option value="seo">SEO</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <!-- Message Field -->
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" placeholder="Describe your project" rows="6" required aria-required="true"></textarea>
+                </div>
+                
+                <!-- Submit Button -->
+                <button type="submit" class="btn hire-me-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
